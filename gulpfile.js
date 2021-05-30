@@ -16,12 +16,16 @@ const fileinclude = require('gulp-file-include');
 
 function htmlFileInclude() {
     return src("app/components/[^_]*.html")
-    .pipe(fileinclude())
-    .pipe(dest("app/"))
+        .pipe(fileinclude())
+        .pipe(dest("app/"))
 }
 
 function styles() {
-    return src("app/scss/style.scss")
+    return src([
+        "node_modules/swiper/swiper-bundle.css",
+        "node_modules/normalize.css/normalize.css",
+        "app/scss/style.scss",
+    ])
         .pipe(scss({
             outputStyle: "compressed"
         }))
@@ -36,9 +40,10 @@ function styles() {
 
 function scripts() {
     return src([
-            "node_modules/jquery/dist/jquery.js",
-            "app/js/main.js"
-        ])
+        "node_modules/swiper/swiper-bundle.js",
+        "app/js/main.js"
+
+    ])
         .pipe(concat("main.min.js"))
         .pipe(uglify())
         .pipe(dest("app/js"))
@@ -75,20 +80,21 @@ function cleanDist() {
 
 function build() {
     return src([
-            "app/css/style.min.css",
-            "app/fonts/**/*",
-            "app/js/main.min.js",
-            "app/*.html",
-        ], {
-            base: "app"
-        })
+        "app/css/style.min.css",
+        "app/fonts/**/*",
+        "app/js/*.js",
+        "app/*.html",
+    ], {
+        base: "app"
+    })
         .pipe(dest("dist"))
 }
 
 function watching() {
     watch("app/scss/**/*.scss", styles);
     watch(["app/js/**/*.js", "!app/js/main.min.js"], scripts);
-    watch("app/**/*.html").on("change", browserSync.reload);
+    watch("app/*.html").on("change", browserSync.reload);
+    watch("app/components/**/*.html").on("change", htmlFileInclude);
 }
 
 exports.styles = styles;
