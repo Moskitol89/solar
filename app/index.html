@@ -1,20 +1,58 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="SHORTCUT ICON" href="img/favicon.ico" type="image/x-icon">
+    <title>Solar</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<div class="wrapper">
-    <div class="content">
-        @@include("_header.html")
+<header class="header">
+    <div class="header__inner" style="background-image: url(img/header-bcg.jpg)">
+        <div class="container">
+            <a href="#" class="header__logo">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <h6 class="header__descr">Зеленый тариф для дома и бизнеса</h6>
+            <h1 class="header__title">Солнечная электростанция</h1>
+            <h2 class="header__subtitle">с доходом от 1000 $ в месяц</h2>
+            <button class="header__sign-up arrow-with-txt">
+                <span class="arrow-with-txt__arrow-block">
+                    <span class="arrow-with-txt__arrow"></span>
+                </span>
+                <span class="arrow-with-txt__txt">записаться на консультацию</span>
+            </button>
+            <ul class="header__social">
+                <li class="header__social-item">
+                    <a class="header__social__link" href="#">
+                        <img class="header__social-instagram" src="img/instagram.svg"
+                             alt="instagram">
+                    </a>
+                </li>
+                <li class="header__social-item">
+                    <a class="header__social__link" href="#">
+                        <img class="header__social-telegram" src="img/telegram.svg"
+                             alt="telegram">
+                    </a>
+                </li>
+                <li class="header__social-item">
+                    <a class="header__social__link" href="#">
+                        <img class="header__social-whatsapp" src="img/whatsapp.svg"
+                             alt="whatsapp">
+                    </a>
+                </li>
+                <li class="header__social-item">
+                    <a class="header__social__link" href="#">
+                        <img class="header__social-facebook" src="img/facebook.svg"
+                             alt="facebook">
+                    </a>
+                </li>
+            </ul>
+
+        </div>
     </div>
-    @@include("_footer.html")
-</div>
-<script src="js/main.min.js"></script>
+</header>
+  
+  <script src="js/main.min.js"></script>
 </body>
 </html>

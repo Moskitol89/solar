@@ -10,14 +10,19 @@ html {
   padding: 0;
 }
 
+body {
+  font-family: NotoSans ,sans-serif;
+  font-weight: 400;
+}
+
 a{
   text-decoration: none;
   display: inline-block;
   color: #000;
 }
 
-container {
-  max-width: 1090px;
+.container {
+  max-width: 1230px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -37,4 +42,44 @@ p {
 
 li {
   display: inline-block;
+}
+.arrow-with-txt {
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  margin-bottom: 266px;
+  &:hover .arrow-with-txt__arrow-block{
+    background-color: $hover;
+  }
+}
+.arrow-with-txt__arrow-block {
+  position: absolute;
+  top: -60px;
+  left: -48px;
+  display: block;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #fff;
+  transition: background-color 0.5s;
+  align-items: center;
+}
+.arrow-with-txt__arrow {
+  mask-image: url("../img/arrow.svg");
+  position: absolute;
+  background-color: white;
+  width: 42px;
+  height: 16px;
+  background-repeat: no-repeat;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+.arrow-with-txt__txt {
+  position: relative;
+  font-size: 18px;
+  line-height: 24px;
 }
