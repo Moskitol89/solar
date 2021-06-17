@@ -1,0 +1,36 @@
+.services {
+  margin-bottom: 150px;
+}
+.services__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: $grey;
+  margin-bottom: 60px;
+}
+.services__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.services__items {
+  max-width: 510px;
+  width: 100%;
+}
+.services__item:not(:last-child){
+  margin-bottom: 50px;
+}
+
+.services__item-title {
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+.services__text {
+  font-size: 14px;
+  line-height: 19px;
+}
+.services__img {
+  max-width: 600px;
+  width: 100%;
+}
