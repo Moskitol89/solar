@@ -43,6 +43,14 @@ p {
 li {
   display: inline-block;
 }
+.title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: $grey;
+  margin-bottom: 60px;
+}
 .arrow-with-txt {
   position: relative;
   background-color: transparent;

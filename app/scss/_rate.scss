@@ -1,0 +1,119 @@
+.rate {
+  margin-bottom: 150px;
+}
+.rate__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.rate__info {
+  max-width: 510px;
+  width: 100%;
+}
+.rate__tabs-names {
+  margin-bottom: 120px;
+}
+.rate__tab-name{
+  display: inline-block;
+  line-height: 24px;
+  &:not(:last-child){
+    margin-right: 40px;
+  }
+  &:hover{
+    cursor: pointer;
+  }
+  &.active {
+    border-bottom: 1px solid #000;
+  }
+}
+.rate__info-img {
+  max-width: 235px;
+  width: 100%;
+  height: 200px;
+  margin-right: 35px;
+}
+.rate__info-slider {
+  max-width: 235px;
+  width: 100%;
+  height: 200px;
+  display: inline-block;
+}
+.rate__info-slide {
+  font-size: 14px;
+  line-height: 19px;
+}
+.rate__info-arrow-prev,
+.rate__info-arrow-next{
+  &:after{
+    content: "";
+  }
+  width: 40px;
+  height: 8px;
+  top: auto;
+  bottom: 0;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.rate__info-arrow-next {
+  right: auto;
+  left: 72px;
+  mask-image: url("../img/arrow-next.svg");
+  &:hover {
+    background-color: $hover;
+  }
+}
+.rate__info-arrow-prev {
+  mask-image: url("../img/arrow-prv.svg");
+  &:hover {
+    background-color: $hover;
+  }
+}
+//.rate__info-arrow-prev:after,
+//.rate__info-arrow-next:after{
+//  width: 40px;
+//  height: 8px;
+//  background-color: #000000;
+//  background-repeat: no-repeat;
+//}
+//.rate__info-arrow-prev:after {
+//  mask-image: url("../img/arrow-prv.svg");
+//}
+//.rate__info-arrow-next:after {
+//  mask-image: url("../img/arrow-next.svg");
+//}
+.rate__text-block {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.rate__text-item {
+  margin-top: 19px;
+  max-width: 235px;
+  width: 100%;
+}
+.rate__text-title {
+  font-weight: 700;
+  line-height: 24px;
+  color: #000;
+  margin-bottom: 5px;
+}
+.rate__text {
+  line-height: 19px;
+  font-size: 14px;
+}
+.rate__photo {
+  max-width: 600px;
+  width: 100%;
+}
+.rate__descr {
+  line-height: 24px;
+  font-weight: 700;
+}
+.rate__img {
+  margin-top: 17px;
+  max-width: 600px;
+  width: 100%;
+  height: 525px;
+}
