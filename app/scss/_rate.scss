@@ -15,6 +15,7 @@
 .rate__tab-name{
   display: inline-block;
   line-height: 24px;
+
   &:not(:last-child){
     margin-right: 40px;
   }
@@ -23,6 +24,12 @@
   }
   &.active {
     border-bottom: 1px solid #000;
+  }
+}
+.rate__tab {
+  display: none;
+  &.active {
+    display: block;
   }
 }
 .rate__info-img {
@@ -69,19 +76,6 @@
     background-color: $hover;
   }
 }
-//.rate__info-arrow-prev:after,
-//.rate__info-arrow-next:after{
-//  width: 40px;
-//  height: 8px;
-//  background-color: #000000;
-//  background-repeat: no-repeat;
-//}
-//.rate__info-arrow-prev:after {
-//  mask-image: url("../img/arrow-prv.svg");
-//}
-//.rate__info-arrow-next:after {
-//  mask-image: url("../img/arrow-next.svg");
-//}
 .rate__text-block {
   margin-top: 100px;
   display: flex;
