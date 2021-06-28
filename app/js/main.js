@@ -25,11 +25,19 @@ function switchTabs(clickedTabButton) {
     tabButtons[indexOfClicked].classList.add("active");
     tabs[indexOfClicked].classList.add("active");
 }
-const swiper = new Swiper(".rate__info-slider", {
+const swiperRate = new Swiper(".rate__info-slider", {
     autoplay: true,
     loop: true,
     navigation: {
         nextEl: ".rate__info-arrow-next",
         prevEl: ".rate__info-arrow-prev"
+    }
+});
+const swiperClients = new Swiper(".clients-slider", {
+    autoplay: true,
+    loop: true,
+    navigation: {
+        nextEl: ".clients-arrow-next",
+        prevEl: ".clients-arrow-prev"
     }
 });

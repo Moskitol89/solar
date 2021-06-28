@@ -49,7 +49,9 @@
   line-height: 19px;
 }
 .rate__info-arrow-prev,
-.rate__info-arrow-next{
+.rate__info-arrow-next,
+.clients-arrow-next,
+.clients-arrow-prev{
   &:after{
     content: "";
   }
@@ -62,7 +64,8 @@
   background-size: cover;
 
 }
-.rate__info-arrow-next {
+.rate__info-arrow-next,
+.clients-arrow-next{
   right: auto;
   left: 72px;
   mask-image: url("../img/arrow-next.svg");
@@ -70,7 +73,8 @@
     background-color: $hover;
   }
 }
-.rate__info-arrow-prev {
+.rate__info-arrow-prev,
+.clients-arrow-prev{
   mask-image: url("../img/arrow-prv.svg");
   &:hover {
     background-color: $hover;

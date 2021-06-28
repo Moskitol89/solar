@@ -1,0 +1,40 @@
+.clients-slide {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 32px;
+}
+
+.clients-slide__img {
+  max-width: 510px;
+  width: 100%;
+}
+
+.clients__info {
+  max-width: 555px;
+  width: 100%;
+}
+
+.clients-slide__title {
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.clients-slide__items {
+  margin-left: 50px;
+}
+
+.clients-slide__item {
+  font-size: 14px;
+  line-height: 19px;
+  display: block;
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+.clients-arrow-prev{
+  left: 270px;
+}
+.clients-arrow-next  {
+  left: 332px;
+}

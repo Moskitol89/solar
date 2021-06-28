@@ -1,0 +1,18 @@
+.quote-block {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  background-attachment: fixed;
+  margin-bottom: 150px;
+}
+.quote-block__text {
+  color: #fff;
+  max-width: 673px;
+  width: 100%;
+  font-size: 42px;
+  line-height: 57px;
+  margin: auto;
+  text-align: center;
+}
