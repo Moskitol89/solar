@@ -1,3 +1,6 @@
+.clients {
+  margin-bottom: 150px;
+}
 .clients-slide {
   display: flex;
   justify-content: space-between;
@@ -10,6 +13,7 @@
 }
 
 .clients__info {
+  position: relative;
   max-width: 555px;
   width: 100%;
 }
@@ -28,13 +32,36 @@
   font-size: 14px;
   line-height: 19px;
   display: block;
+
   &:not(:last-child) {
     margin-bottom: 15px;
   }
 }
-.clients-arrow-prev{
+
+.clients-arrow-prev {
   left: 270px;
 }
-.clients-arrow-next  {
+
+.clients-arrow-next {
   left: 332px;
+}
+
+.clients__sign-block {
+  border-color: #000;
+}
+
+.clients__sign-arrow {
+  background-color: #000;
+}
+
+.clients__sign-text {
+  color: $black;
+}
+
+.clients__sign-up {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 0;
+  margin-left: 50px;
 }

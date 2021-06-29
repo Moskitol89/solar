@@ -1,0 +1,39 @@
+.steps {
+  margin-bottom: 150px;
+}
+.steps__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.steps__info {
+  max-width: 510px;
+  width: 100%;
+}
+.steps__items {
+  counter-reset: num;
+  list-style-type: none;
+}
+.steps__item {
+  counter-increment: num;
+  display: block;
+  &:before {
+    content: counter(num, decimal-leading-zero);
+    display: block;
+    font-size: 14px;
+    line-height: 19px;
+    color: $grey;
+    margin-bottom: 11px;
+  }
+  &:not(:last-child){
+    margin-bottom: 30px;
+  }
+}
+.steps__item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+.steps__item-text {
+  font-size: 14px;
+  line-height: 19px;
+}

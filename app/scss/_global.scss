@@ -13,6 +13,7 @@ html {
 body {
   font-family: NotoSans ,sans-serif;
   font-weight: 400;
+  color: $black;
 }
 
 a{
@@ -51,6 +52,16 @@ li {
   color: $grey;
   margin-bottom: 60px;
 }
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  max-width: 166px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
 .arrow-with-txt {
   position: relative;
   background-color: transparent;
